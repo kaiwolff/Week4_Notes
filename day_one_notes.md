@@ -18,11 +18,19 @@ A server will require different security protocols to a general purpose computer
 
 # Windows
 
-Windows is the most popular personal computing operating system. It is an important security consideration as it is often a popular attack vector.
+Windows is the most popular personal computing operating system. It is an important security consideration as it is often a popular attack vector. As security was not a key concern in early iterations of windows, some vulnerabilities remain.
+
+### The Windows Filesystem
+
+Firstly, a filesystem describes how data is organised and managed for storage or retrieval on the hard disk. In windows, the original standards where FAT (File Allocation Table), followed by a number related to the maximum file size. Since then, the NTFS (New Technology File System) filesystem is commonly used in windows.
+
+
 
 #### Environment Variables
 
 #### Accessing Logs
+
+This is done via EventViewer. Events are organised according to type
 
 #### Managing Users and Groups
 
@@ -42,6 +50,8 @@ New — To create something
 
 
 There are a lot of commands, data types, and comparative operators. generally, these are best explored with searching when needed. I may attach a few tables once I have formatted them.
+
+
 
 ##### Pipelines
 

@@ -11,3 +11,7 @@ A good example of this is Java, which runs through the Java Virtual Machine. Thi
 ### Type 1 and Type 2 Virtualisation
 
 There are two types of virtualisation, Type 1 and Type 2. Type 1, also known as bare-metal virtualisation, has the virtualisation layer interacting directly with the hardware being used. Type 2 virtualisation interacts with an operating system instead. Type 1 is preferable, as the lack of an OS provides fewer potential security flaws. However, Type 2 virtualisation has the advantage of convenience, as it enables users to quickly employ software on their machine.
+
+## ISO Files
+
+These are also termed disk images, and represent a virtual disk. For example, they can be used to simulate a disk by mounting them in a virtual disk drive, or be burned onto a CD or USB stick. The files contained on the disk image can also be extracted using dedicated software.

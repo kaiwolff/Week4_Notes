@@ -8,22 +8,30 @@ There are three basic types of computer components, that need to be considered f
 
 For a long time, humanware was not considered sufficiently. This means considering how a user might actually be using a computer, which may be at odds with how it was designed to be used.
 
+Hardware covers things such as the motherboard, CPU, etc. At this point, it is useful to point out that the motherboard has a "brain", BIOs (Basic Input/Output System), and more recently UEFI BIOS (Unified Extensible Firmware Interface) to interact with the hardware outside of the operating system
 ### Servers
 
 Servers are computers which provide a service to other computers. This can be the data servers commonly associated with the term, but technically, if a user sets up their laptop to provide access to a printer for other users, that laptop is also running as a printing server.
 
 A server will require different security protocols to a general purpose computer.
 
-## Windows Security - Best Practices
 
-This will be summarised as a "securing windows checklist".
+# Windows
+
+Windows is the most popular personal computing operating system. It is an important security consideration as it is often a popular attack vector.
+
+#### Environment Variables
+
+#### Accessing Logs
+
+#### Managing Users and Groups
 
 
 ### PowerShell
 
-This is a windows designed multiplatform shell, that can be used in a way not dissimilar to bash
+This is a windows designed multiplatform shell, that can be used in a way not dissimilar to bash. 
 
-### PowerShell - Basic Commands
+##### PowerShell - Basic Commands
 
 Get — To get something
 Start — To run something
@@ -39,7 +47,7 @@ There are a lot of commands, data types, and comparative operators. generally, t
 
 These are used to send the output from one command to another command. this is shown using `|`. Extremely useful in scripting.
 
-##### Windows Security - A few basic tips
+### Windows Security - A few basic tips
 
 First thing to check is whether Windows version is genuine or cracked. command for this is in powershell or command prompt and is ```slmgr /xpr```. This should return whether the windows version on the machine is activated or not.
 
@@ -74,7 +82,12 @@ Keeping a daily operation account as non-administrator is also good practice. If
 
 Disable guest account. This prevents unauthorised users from accessing your PC, even if a guest account has limited privileges.
 
-
 #### Encrypting Data
 
-If data needs to be particularly secure, it may be necessary to encrypt data. Windows Business/Pro has bitlocker for this. It encrypts using either 128bit or 256bit encryption.
+If data needs to be particularly secure, it may be necessary to encrypt data. Windows Business/Pro has bitlocker for this. It encrypts using either 128bit or 256bit encryption. There are also third party tools available for encryption.
+
+## Windows Security - Best Practices
+
+This will be summarised as a "securing windows checklist".
+
+
